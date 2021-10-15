@@ -1,0 +1,19 @@
+name: Remote dispatch for IMS-backend scenarios
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notifications:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Send slack notification
+        if: ${{ always() }}
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          fields: repo,message,commit,author,action,workflow
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
