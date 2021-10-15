@@ -31,9 +31,8 @@ jobs:
                     title: 'reverse',
                     value: 'gnirts esrever'.split('').reverse().join(''),
                     short: true
-                  }],
+                  }]
                 }]
-              }]
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
