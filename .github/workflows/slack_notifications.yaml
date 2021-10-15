@@ -15,6 +15,7 @@ jobs:
         with:
           status: ${{ job.status }}
           fields: repo,message,commit,author,action,workflow
-          text: '*Res:* <http://example.com|my link> :package: \\n *More:* Hi'
+          emoji: ':package:'
+          #text: '*Res:* <http://example.com|my link> :package: \\n *More:* Hi'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
