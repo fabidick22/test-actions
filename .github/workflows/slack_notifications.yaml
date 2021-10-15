@@ -15,8 +15,6 @@ jobs:
         with:
           status: custom
           fields: repo,message,commit,author,action,workflow
-          emoji: ':package:'
-          text: '*Res:* <http://example.com|my link> :package: \\n *More:* Hi'
           custom_payload: |
             {
               attachments: [{
