@@ -8,6 +8,13 @@ jobs:
   notifications:
     runs-on: ubuntu-latest
     steps:
+      - name: Test Output
+        id: test_path
+        env:
+          NEW_PATH: "data"
+        run: |
+          path="serenity-$(date +%Y.%m.%d-%H.%M.%S)"
+          echo '::set-output name=OUTPUT_PATH::$NEW_PATH/$path'
 
       - name: Send slack notification
         if: ${{ always() }}
@@ -16,7 +23,7 @@ jobs:
           status: ${{ job.status }}
           fields: repo,message,commit,author,action,workflow
           #icon_emoji: ':octocat:'
-          author_name: '*Res:* <http://example.com|my link> :package: \\n *More:* Hi'
+          author_name: 'Path: /${{ steps.test_path.outputs.output_path }}'
           #text: '*Res:* <http://example.com|my link> :package: \\n *More:* Hi'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK }}
