@@ -15,7 +15,7 @@ jobs:
         run: |
           path="serenity-$(date +%Y.%m.%d-%H.%M.%S)"
           p=$NEW_PATH/$path
-          echo '::set-output name=OUTPUT_PATH::$p'
+          echo '::set-output name=OUTPUT_PATH::${p}'
 
       - name: Send slack notification
         if: ${{ always() }}
