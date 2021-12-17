@@ -10,15 +10,17 @@ jobs:
     env:
       NUMBER: ""
       EVENT_TYPE: ""
+      JSON: ""
     steps:
 
       - name: Get parameters
         run: |
           echo EVENT_TYPE=$(echo ${{ toJSON(github.event.event_type) }}) >> $GITHUB_ENV
           echo NUMBER=$(echo ${{ toJSON(github.event.client_payload.number) }}) >> $GITHUB_ENV
+          echo JSON=$(echo '${{ toJSON(github.event.client_payload.json) }}') >> $GITHUB_ENV
 
       - name: print json
         run: echo '${{ toJSON(github.event.client_payload.json) }}' > data.json && cat data.json
 
       - name: print json
-        run: echo '${{ toJSON(github.event) }}' > data2.json && cat data2.json
+        run: echo ${{ env.JSON }} > data2.json && cat data2.json
