@@ -19,3 +19,6 @@ jobs:
 
       - name: print json
         run: echo '${{ toJSON(github.event.client_payload.json) }}' > data.json && cat data.json
+
+      - name: print json
+        run: echo '${{ toJSON(github.event) }}' > data2.json && cat data2.json
