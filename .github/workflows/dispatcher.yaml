@@ -18,4 +18,4 @@ jobs:
           echo NUMBER=$(echo ${{ toJSON(github.event.client_payload.number) }}) >> $GITHUB_ENV
 
       - name: print json
-        run: echo ${{ toJSON(github.event.client_payload.json) }} > data.json && cat data.json
+        run: echo '${{ toJSON(github.event.client_payload.json) }}' > data.json && cat data.json
