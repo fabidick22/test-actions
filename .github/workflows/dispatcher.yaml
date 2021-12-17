@@ -1,0 +1,23 @@
+name: "Dispatcher"
+
+on:
+  repository_dispatch:
+    types: [ test ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      NUMBER: ""
+      EVENT_TYPE: ""
+      JSON: ""
+    steps:
+
+      - name: Get parameters
+        run: |
+          echo EVENT_TYPE=$(echo ${{ toJSON(github.event.event_type) }}) >> $GITHUB_ENV
+          echo NUMBER=$(echo ${{ toJSON(github.event.client_payload.number) }}) >> $GITHUB_ENV
+          echo JSON=$(echo ${{ toJSON(github.event.client_payload.custom_vars) }}) >> $GITHUB_ENV
+
+      - name: print json
+        run: echo ${{ env.JSON }} > data.json && cat data.json

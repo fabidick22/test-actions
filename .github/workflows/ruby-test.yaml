@@ -1,0 +1,27 @@
+name: Test ruby config
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ruby:
+    runs-on: ubuntu-latest
+    env:
+      RUBY_VERSION: 3.0.2
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ env.RUBY_VERSION }}
+
+      - name: Install dependencies
+        run: |
+          bundle install --path vendor/bundle --jobs 4 --retry 3
+
+      - run: bundle exec rails --version
+
+      - name: Update Collections
+        run: bundle exec rails db:seed
