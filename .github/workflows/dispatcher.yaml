@@ -17,7 +17,7 @@ jobs:
         run: |
           echo EVENT_TYPE=$(echo ${{ toJSON(github.event.event_type) }}) >> $GITHUB_ENV
           echo NUMBER=$(echo ${{ toJSON(github.event.client_payload.number) }}) >> $GITHUB_ENV
-          echo JSON=$(echo ${{ toJSON(github.event.client_payload.json) }}) >> $GITHUB_ENV
+          echo JSON=$(echo ${{ github.event.client_payload.json }}) >> $GITHUB_ENV
 
       - name: print json
         run: echo ${{ env.JSON }} > data.json && cat data.json
