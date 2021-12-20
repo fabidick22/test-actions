@@ -37,7 +37,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-terraform-
 
-      - run: ls
+      - run: ls -all
         working-directory: ${{ env.TF_PATH }}
 
       - name: Run Init
