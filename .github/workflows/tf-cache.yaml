@@ -39,4 +39,4 @@ jobs:
 
       - name: Run Plan
         working-directory: ${{ env.TF_PATH }}
-        run: terragrunt plan
+        run: terraform plan
