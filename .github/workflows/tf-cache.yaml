@@ -28,17 +28,17 @@ jobs:
 
       - run: "echo $GITHUB_WORKSPACE"
 
-      - name: Cache Terraform
-        uses: actions/cache@v2
-        with:
-          path: |
-            ${{ github.workspace }}/${{ env.TF_PATH }}/.terraform
-          key: ${{ runner.os }}-terraform-${{ hashFiles('**/.terraform.lock.hcl') }}
-          restore-keys: |
-            ${{ runner.os }}-terraform-
+#      - name: Cache Terraform
+#        uses: actions/cache@v2
+#        with:
+#          path: |
+#            ${{ github.workspace }}/${{ env.TF_PATH }}/.terraform
+#          key: ${{ runner.os }}-terraform-${{ hashFiles('**/.terraform.lock.hcl') }}
+#          restore-keys: |
+#            ${{ runner.os }}-terraform-
 
-      - run: ls -all .terraform/
-        working-directory: ${{ env.TF_PATH }}
+#      - run: ls -all .terraform/
+#        working-directory: ${{ env.TF_PATH }}
 
       - name: Run Init
         working-directory: ${{ env.TF_PATH }}
