@@ -1,5 +1,5 @@
 
-name: "Review Apps "
+name: "Terraform cache"
 
 on:
   push:
@@ -36,6 +36,12 @@ jobs:
           key: ${{ runner.os }}-terraform-${{ hashFiles('**/.terraform.lock.hcl') }}
           restore-keys: |
             ${{ runner.os }}-terraform-
+
+      - run: ls
+
+      - name: Run Init
+        working-directory: ${{ env.TF_PATH }}
+        run: terraform init
 
       - name: Run Plan
         working-directory: ${{ env.TF_PATH }}
