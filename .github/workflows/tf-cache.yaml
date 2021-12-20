@@ -38,6 +38,7 @@ jobs:
             ${{ runner.os }}-terraform-
 
       - run: ls
+        working-directory: ${{ env.TF_PATH }}
 
       - name: Run Init
         working-directory: ${{ env.TF_PATH }}
