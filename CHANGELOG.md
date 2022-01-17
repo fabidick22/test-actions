@@ -1,3 +1,9 @@
+## [1.1.2](https://github.com/fabidick22/test-actions/compare/v1.1.1...v1.1.2) (2022-01-17)
+
+### Code Refactoring
+
+- update debug ([6bd2d0e](https://github.com/fabidick22/test-actions/commit/6bd2d0e52389be5de2b523b121cb09a4dcc5d680))
+
 ## [1.1.1](https://github.com/fabidick22/test-actions/compare/v1.1.0...v1.1.1) (2022-01-17)
 
 ### Bug Fixes
