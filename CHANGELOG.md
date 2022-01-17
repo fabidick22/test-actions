@@ -1,3 +1,18 @@
+## [1.1.1](https://github.com/fabidick22/test-actions/compare/v1.1.0...v1.1.1) (2022-01-17)
+
+### Bug Fixes
+
+- update action id ([cfeca8d](https://github.com/fabidick22/test-actions/commit/cfeca8d530adfdf017cc991d02615cb7fc61056c))
+
+### Code Refactoring
+
+- add dry-run mode ([944d979](https://github.com/fabidick22/test-actions/commit/944d97987b3db596ffc233ef451a2ac7dc832ed6))
+
+### Other
+
+- Merge branch 'main' of github.com:fabidick22/test-actions ([61c8513](https://github.com/fabidick22/test-actions/commit/61c851339e405fdb006506f92b8bb102de4a5025))
+- test 1 ([2ad2465](https://github.com/fabidick22/test-actions/commit/2ad2465eb043fbe7f162ac4f398dcbb63e1d313b))
+
 # [1.1.0](https://github.com/fabidick22/test-actions/compare/v1.0.1...v1.1.0) (2022-01-17)
 
 ### Features
