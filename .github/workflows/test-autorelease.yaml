@@ -15,7 +15,8 @@ jobs:
 
       - run: mkdir -p test-commit-assets/ && echo "$(openssl rand -base64 20)" > test-commit-assets/data.txt
 
-      - run: tar czf dar-$(date +%Y%m%d-%H%M%S).tar.gz test-commit-assets/
+      #- run: tar czf dar-$(date +%Y%m%d-%H%M%S).tar.gz test-commit-assets/
+      - run: tar czf dar-test.tar.gz test-commit-assets/
 
       - name: Release
         id: build_package
@@ -26,5 +27,7 @@ jobs:
           release-branches: '["main", "master"]'
           node-module: false
           disable-changelog: false
+          release-assets: |
+            ./dar-test.tar.gz
           commit-assets: |
             ./test-commit-assets/
