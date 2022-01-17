@@ -1,3 +1,14 @@
+# [1.1.0](https://github.com/fabidick22/test-actions/compare/v1.0.1...v1.1.0) (2022-01-17)
+
+### Features
+
+- tar artefact to release ([feef32b](https://github.com/fabidick22/test-actions/commit/feef32b940e6ca2937eed26d6f698a519ee884b8))
+- tar artefact to release ([794ea89](https://github.com/fabidick22/test-actions/commit/794ea897cdad1985fca94bb0233f931ae54c1f9e))
+
+### Other
+
+- Merge branch 'main' of github.com:fabidick22/test-actions ([3af625b](https://github.com/fabidick22/test-actions/commit/3af625bfca6fc59637c954b5f97c39bccf004974))
+
 ## [1.0.1](https://github.com/fabidick22/test-actions/compare/v1.0.0...v1.0.1) (2022-01-17)
 
 ### Bug Fixes
