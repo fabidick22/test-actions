@@ -23,6 +23,7 @@ jobs:
           dry-run: true
 
       - run: echo "${{ steps.build_package2.outputs.version }}"
+      - run: echo "${{ steps.build_package2.outputs.released  }}"
 
       - run: mkdir -p test-commit-assets/ && echo "$(openssl rand -base64 20)" > test-commit-assets/data.txt
 
