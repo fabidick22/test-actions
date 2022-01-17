@@ -12,38 +12,18 @@ jobs:
     env:
       TF_PATH: "tf/p1"
     steps:
-
       - uses: actions/checkout@v2
 
+      - run: mkdir test-commit-assets/ && echo "$(openssl rand -base64 20)" > test-commit-assets/data.txt
 
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v1
+      - name: Release
+        id: build_package
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        uses: ridedott/release-me-action@v3.6.23
         with:
-          terraform_version: 1.0.11
-
-      - name: Setup Terragrunt
-        uses: autero1/action-terragrunt@v1.1.0
-        with:
-          terragrunt_version: 0.35.6
-
-      - run: "echo $GITHUB_WORKSPACE"
-
-#      - name: Cache Terraform
-#        uses: actions/cache@v2
-#        with:
-#          path: |
-#            ${{ github.workspace }}/${{ env.TF_PATH }}/.terraform
-#          key: ${{ runner.os }}-terraform-${{ hashFiles('**/.terraform.lock.hcl') }}
-#          restore-keys: |
-#            ${{ runner.os }}-terraform-
-
-#      - run: ls -all .terraform/
-#        working-directory: ${{ env.TF_PATH }}
-
-      - name: Run Init
-        working-directory: ${{ env.TF_PATH }}
-        run: terraform init
-
-      - name: Run Plan
-        working-directory: ${{ env.TF_PATH }}
-        run: terraform plan
+          release-branches: '["main", "master"]'
+          node-module: false
+          disable-changelog: false
+          commit-assets: |
+            ./test-commit-assets/
