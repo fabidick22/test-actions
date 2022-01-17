@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - run: mkdir test-commit-assets/ && echo "$(openssl rand -base64 20)" > test-commit-assets/data.txt
+      - run: mkdir -p test-commit-assets/ && echo "$(openssl rand -base64 20)" > test-commit-assets/data.txt
 
       - name: Release
         id: build_package
