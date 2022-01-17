@@ -14,8 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - run: mkdir -p test-commit-assets/ && echo "$(openssl rand -base64 20)" > test-commit-assets/data.txt
-
       - name: Release
         id: build_package
         env:
@@ -26,4 +24,4 @@ jobs:
           node-module: false
           disable-changelog: false
           commit-assets: |
-            ./test-commit-assets/
+            ./
