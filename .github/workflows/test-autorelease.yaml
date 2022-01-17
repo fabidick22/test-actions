@@ -13,6 +13,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Release Dry run mode
+        id: build_package
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        uses: ridedott/release-me-action@v3.6.23
+        with:
+          release-branches: '["main", "master"]'
+          dry-run: true
+
       - run: mkdir -p test-commit-assets/ && echo "$(openssl rand -base64 20)" > test-commit-assets/data.txt
 
       #- run: tar czf dar-$(date +%Y%m%d-%H%M%S).tar.gz test-commit-assets/
