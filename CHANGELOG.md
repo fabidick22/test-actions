@@ -1,3 +1,18 @@
+## [1.0.1](https://github.com/fabidick22/test-actions/compare/v1.0.0...v1.0.1) (2022-01-17)
+
+### Bug Fixes
+
+- add -p attribute to create directory ([1b6276d](https://github.com/fabidick22/test-actions/commit/1b6276d0d151e6fee7f1857968ae95c08d7e5c56))
+- update workflow ([90a89c4](https://github.com/fabidick22/test-actions/commit/90a89c41e942e451628ca9035fa0cce6d1588ba6))
+
+### Code Style
+
+- testing purpose ([b308f37](https://github.com/fabidick22/test-actions/commit/b308f37566df9a96ad28ed6be5b25c946422b06d))
+
+### Other
+
+- Merge branch 'main' of github.com:fabidick22/test-actions ([2f8d8d1](https://github.com/fabidick22/test-actions/commit/2f8d8d15158fddd20c120675de1c629be1424689))
+
 # 1.0.0 (2022-01-17)
 
 ### Bug Fixes
