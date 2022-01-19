@@ -17,6 +17,5 @@ jobs:
         with:
           aws-region: us-east-1
           role-to-assume: ${{ secrets.AWS_ROLE }}
-          role-session-name: TestingRole
 
       - run: aws s3 ls dataaaa
