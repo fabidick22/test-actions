@@ -1,3 +1,13 @@
+## [1.0.2](https://github.com/fabidick22/test-actions/compare/v1.0.1...v1.0.2) (2022-01-20)
+
+### Bug Fixes
+
+- Add repository attribute ([6627bd8](https://github.com/fabidick22/test-actions/commit/6627bd8ae9427227a177311d9f2a864ce054e825))
+
+### Other
+
+- Merge branch 'main' of github.com:fabidick22/test-actions ([e2b26be](https://github.com/fabidick22/test-actions/commit/e2b26becd7ceaab42f4159636aa6f1f7d09d7839))
+
 ## [1.0.1](https://github.com/fabidick22/test-actions/compare/v1.0.0...v1.0.1) (2022-01-20)
 
 ### Bug Fixes
