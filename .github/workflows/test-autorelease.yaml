@@ -47,6 +47,7 @@ jobs:
 
       - uses: robinraju/release-downloader@v1.3
         with:
+          repository: "fabidick22/test-actions"
           tag: "${{ steps.build_package2.outputs.version }}"
           fileName: "dar-test.tar.gz"
           token: "${{ secrets.GH_TOKEN }}"
