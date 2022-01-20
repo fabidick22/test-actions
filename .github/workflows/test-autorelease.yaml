@@ -44,3 +44,14 @@ jobs:
             ./dar-test.tar.gz
           commit-assets: |
             ./test-commit-assets/
+
+      - uses: robinraju/release-downloader@v1.3
+        with:
+          repository: "ridedott/release-me-action"
+          tag: "${{ steps.build_package2.outputs.version }}"
+          fileName: "dar-test.tar.gz"
+
+      - name: Unpack artifact
+        run: tar -xvf ./dar-test.tar.gz
+
+      - run: ls -all
