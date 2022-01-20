@@ -1,3 +1,13 @@
+## [1.0.3](https://github.com/fabidick22/test-actions/compare/v1.0.2...v1.0.3) (2022-01-20)
+
+### Bug Fixes
+
+- Update values ([4688352](https://github.com/fabidick22/test-actions/commit/46883520ebd4d567e9938acee093a0825b99c4a9))
+
+### Other
+
+- Merge branch 'main' of github.com:fabidick22/test-actions ([4420bcf](https://github.com/fabidick22/test-actions/commit/4420bcf0d9a80a9af34a2fcd9cd25b94274d6bb7))
+
 ## [1.0.2](https://github.com/fabidick22/test-actions/compare/v1.0.1...v1.0.2) (2022-01-20)
 
 ### Bug Fixes
