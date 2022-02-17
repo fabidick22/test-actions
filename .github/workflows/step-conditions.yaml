@@ -1,0 +1,22 @@
+name: pull request comment
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+ job01:
+   runs-on: [ubuntu-latest]
+   env:
+     VAR1: "hi 1"
+     VAR2: "hi 2"
+   steps:
+     - name: say hello
+       if: env.VAR1 == 'hi 1'
+       run: |
+         echo say ${{ env.VAR1 }}
+
+     - name: test
+       if: env.VAR1 == "hi 2"
+       run: |
+         echo say ${{ env.VAR2 }}
