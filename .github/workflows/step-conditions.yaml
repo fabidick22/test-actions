@@ -8,7 +8,7 @@ jobs:
  job01:
    runs-on: [ubuntu-latest]
    env:
-     VAR1: "hi 1"
+     VAR1: ""
      VAR2: "hi 2"
    steps:
      - name: say hello
