@@ -16,7 +16,7 @@ jobs:
        run: |
          echo say ${{ env.VAR1 }}
 
-     - name: test
-       if: env.VAR1 == "hi 2"
+     - name: say hello
+       if: env.VAR2 == 'hi 2'
        run: |
          echo say ${{ env.VAR2 }}
