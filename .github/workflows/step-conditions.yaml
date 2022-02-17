@@ -17,6 +17,6 @@ jobs:
          echo say ${{ env.VAR1 }}
 
      - name: say hello
-       if: env.VAR2 == 'hi 2'
+       if: env.VAR1 != '' && env.VAR2 == 'hi 2'
        run: |
          echo say ${{ env.VAR2 }}
