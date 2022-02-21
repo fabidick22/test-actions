@@ -27,6 +27,7 @@ jobs:
         run: until ping -c1 ${{ secrets.TEST_SERVER }}; do sleep 2; done
 
       - name: Deploy
+        if: always()
         run: nslookup ${{ secrets.TEST_SERVER }}
 
       - name: Kill VPN connection
