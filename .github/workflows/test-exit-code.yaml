@@ -1,0 +1,23 @@
+
+name: "Exit code"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      TF_PATH: "tf/p1"
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Release
+        run: |
+          set +e
+          exit 1
+          exit 0
+          set -e
+          exit 1
