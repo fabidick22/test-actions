@@ -1,3 +1,26 @@
+# [1.1.0](https://github.com/fabidick22/test-actions/compare/v1.0.3...v1.1.0) (2022-03-20)
+
+### Features
+
+- Create new workflow ([448a7f3](https://github.com/fabidick22/test-actions/commit/448a7f34cb27f5f0ed7f753b70b89a3610d9ecde))
+- new workflow ([4d20427](https://github.com/fabidick22/test-actions/commit/4d204272295aa1c1eab53c6e9eeddbf2fb8469a7))
+- new workflow ([1ac072a](https://github.com/fabidick22/test-actions/commit/1ac072a9ef0b74baa1f9d96676bd811283796ba0))
+- new workflow ([b7db120](https://github.com/fabidick22/test-actions/commit/b7db1208583bf46aa1112d5338aec392c4409c43))
+- New workflow ([2a2bad3](https://github.com/fabidick22/test-actions/commit/2a2bad35bf068d164b341b60bde4ae262b080084))
+
+### Other
+
+- Merge pull request #5 from fabidick22/feat-test1 ([fe053a1](https://github.com/fabidick22/test-actions/commit/fe053a1761df81b0033fe0a40a373d232a29d4f5)), closes [#5](https://github.com/fabidick22/test-actions/issues/5)
+- Merge pull request #4 from fabidick22/feat-test1 ([fa720c4](https://github.com/fabidick22/test-actions/commit/fa720c4458567ee5ec48cfca3d6c97ee3c2754f7)), closes [#4](https://github.com/fabidick22/test-actions/issues/4)
+- test conditions action ([e8814fd](https://github.com/fabidick22/test-actions/commit/e8814fd78ad2371714e35d10c520cddd1aedda92))
+- test conditions action ([b225a06](https://github.com/fabidick22/test-actions/commit/b225a062650a0c2f89303e86969605f1031624ed))
+- test conditions action ([8a5fb2b](https://github.com/fabidick22/test-actions/commit/8a5fb2bd1b66d7c414a068e91f5d22710e3ffa54))
+- test conditions action ([97902ea](https://github.com/fabidick22/test-actions/commit/97902eadc9930381b1521a6795f773bd06b9565b))
+- Merge pull request #3 from fabidick22/test-pr-cooment ([fe440b7](https://github.com/fabidick22/test-actions/commit/fe440b74bb5b101de30c99a9515a48e27b114bce)), closes [#3](https://github.com/fabidick22/test-actions/issues/3)
+- test conditions action ([ba13914](https://github.com/fabidick22/test-actions/commit/ba13914e6731c46dea6b8a36464c77acf94f9b89))
+- Merge pull request #1 from fabidick22/test-pr-cooment ([426d775](https://github.com/fabidick22/test-actions/commit/426d775476f4a598882c3bd4fd8a20a0c5c4549f)), closes [#1](https://github.com/fabidick22/test-actions/issues/1)
+- Update readme ([8a7ca49](https://github.com/fabidick22/test-actions/commit/8a7ca498f92dcd097a7d74d4d566a3997e3fd70b))
+
 ## [1.0.3](https://github.com/fabidick22/test-actions/compare/v1.0.2...v1.0.3) (2022-01-20)
 
 ### Bug Fixes
