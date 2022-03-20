@@ -17,8 +17,7 @@ jobs:
       - name: Release
         run: |
           set +e
-          out=$(exit 1)
-          echo $out
+          exit 1 || error=true
           exit 0
           set -e
           exit 0
