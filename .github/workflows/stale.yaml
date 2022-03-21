@@ -1,0 +1,22 @@
+name: 'Close stale issues and PRs'
+on:
+  schedule:
+    - cron: '30 1 * * *'
+  workflow_dispatch: {}
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - uses: actions/stale@v4
+        with:
+          days-before-pr-stale: 10
+          days-before-pr-close: 2
+          stale-issue-message: 'Stale issue message'
+          stale-pr-message: 'Stale pull request message'
+          days-before-issue-stale: -1 # disable for issues
+          stale-pr-label: 'no-pr-activity,stale' # The label that will be added manually to be marked as stale.
+          exempt-pr-labels: 'awaiting-approval,work-in-progress,WIP' # Labels to skip to be marked as stale.
+          any-of-pr-labels: 'stale,ra,test' # It's only processed if it contains any of the following labels
+          start-date: '2022-03-21T00:00:00Z' # The start date is used to ignore the issues and PRs created before the start date.
