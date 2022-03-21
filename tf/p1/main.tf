@@ -9,3 +9,5 @@ data "template_file" "init" {
     consul_address = data.http.get.body
   }
 }
+
+
