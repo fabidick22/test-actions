@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Debug
-        run: echo ${{ github.event }}
+        run: echo ${{ toJSON(github.event) }}
       - name: Get labels
         run: echo ${{ github.event.pull_request.labels }}
       - name: Get autor
