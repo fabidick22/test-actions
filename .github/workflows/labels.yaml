@@ -1,0 +1,20 @@
+name: 'PR Labels'
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    types: [synchronize, opened, reopened, ]
+    branches:
+      - master
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug
+        run: echo ${{ github.event.requested_team.name == 'octo-team'}}
+      - name: Get labels
+        run: echo ${{ github.event.pull_request.labels }}
+      - name: Get labels
+        run: echo ${{ github.event.sender.login }}
