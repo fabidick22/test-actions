@@ -13,8 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Debug
-        run: echo ${{ github.event.requested_team.name == 'octo-team'}}
+        run: echo ${{ github.event }}
       - name: Get labels
         run: echo ${{ github.event.pull_request.labels }}
-      - name: Get labels
-        run: echo ${{ github.event.sender.login }}
+      - name: Get autor
+        run: |
+          echo ${{ github.event.sender.login }}
+          echo ${{ github.event.sender.url }}
