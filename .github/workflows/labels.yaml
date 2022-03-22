@@ -16,7 +16,7 @@ jobs:
         run: echo "${{ toJSON(github.event) }}"
 
       - name: Get labels
-        run: echo "${{ toJSON(github.event.pull_request.labels) }}" | jq -r 'map(.name) | join(",")'
+        run: echo '${{ toJSON(github.event.pull_request.labels) }}' | jq -r 'map(.name) | join(",")'
 
       - name: Get autor
         run: |
