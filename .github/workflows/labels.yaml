@@ -16,12 +16,12 @@ jobs:
         run: echo "${{ toJSON(github.event) }}"
 
       - name: Get labels
-        run: echo ${{ toJSON(github.event.pull_request.labels) }}
+        run: echo "${{ toJSON(github.event.pull_request.labels) }}"
 
       - name: Get autor
         run: |
-          echo ${{ github.event.sender.login }}
-          echo ${{ github.event.sender.url }}
+          echo "${{ github.event.sender.login }}"
+          echo "${{ github.event.sender.url }}"
   autor:
     runs-on: ubuntu-latest
     steps:
