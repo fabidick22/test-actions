@@ -9,7 +9,7 @@ on:
     branches:
       - main
 jobs:
-  stale:
+  labels:
     runs-on: ubuntu-latest
     steps:
       - name: Debug
@@ -21,4 +21,9 @@ jobs:
       - name: Get autor
         run: |
           echo ${{ github.event.sender.login }}
-          echo ${{ github.event.sender.url }}
+          echo ${{ github.event.sender.url }}}
+  autor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Autor
+        run: echo ${{ toJSON(github.actor) }}
