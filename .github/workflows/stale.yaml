@@ -12,9 +12,9 @@ jobs:
     steps:
       - uses: actions/stale@v4
         with:
-          days-before-issue-stale: 0.1 # disable for issues
+          days-before-issue-stale: 1
           days-before-pr-stale: 10
-          days-before-pr-close: 0.1
+          days-before-pr-close: 1
           stale-pr-message: This pull request is now marked as stale because it hasn't seen activity for a while.
           close-pr-message: Closing this pull request as it hasn't seen activity for a while.
           stale-pr-label: 'stale' # The label that will be added manually to be marked as stale.
