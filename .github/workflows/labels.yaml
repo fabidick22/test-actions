@@ -5,16 +5,25 @@ on:
       - main
 
   pull_request:
-    types: [synchronize, opened, reopened, ]
+    types: [synchronize, opened, reopened, labeled]
     branches:
       - main
 jobs:
-  stale:
+  labels:
     runs-on: ubuntu-latest
     steps:
       - name: Debug
-        run: echo ${{ github.event.requested_team.name == 'octo-team'}}
+        run: echo "${{ toJSON(github.event) }}"
+
       - name: Get labels
-        run: echo ${{ github.event.pull_request.labels }}
-      - name: Get labels
-        run: echo ${{ github.event.sender.login }}
+        run: echo '${{ toJSON(github.event.pull_request.labels) }}' | jq -r 'map(.name) | join(",")'
+
+      - name: Get autor
+        run: |
+          echo "${{ github.event.sender.login }}"
+          echo "${{ github.event.sender.url }}"
+  autor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Autor
+        run: echo "${{ toJSON(github.actor) }}"
