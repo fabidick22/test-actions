@@ -1,0 +1,21 @@
+name: "Dispatcher"
+
+on:
+  workflow_dispatch:
+    inputs:
+      env:
+        type: environment
+        required: true
+        description: "Environment"
+      dry_run:
+        type: boolean
+        required: false
+        default: false
+        description: Dry run mode
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug
+        run: echo "${{ toJSON(github) }}"
