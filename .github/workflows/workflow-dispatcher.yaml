@@ -1,4 +1,4 @@
-name: "Dispatcher"
+name: "Workflow Dispatcher"
 
 on:
   workflow_dispatch:
