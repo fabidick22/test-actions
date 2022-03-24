@@ -1,0 +1,16 @@
+name: 'PR Labels'
+on:
+  pull_request:
+    types: [synchronize, opened, reopened, labeled]
+    branches:
+      - main
+jobs:
+  labels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug Github Event
+        run: echo "${{ toJSON(github) }}"
+
+      - name: Debug Pull Request Event
+        run: echo "${{ toJSON(github) }}"
+
