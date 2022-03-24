@@ -25,10 +25,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Debug
-        run: echo "${{ toJSON(github.event) }}"
+        run: echo "${{ toJSON(github) }}"
 
       - name: Get labels
-        run: echo '${{ toJSON(github.event.pull_request.labels) }}' | jq -r 'map(.name) | join(",")'
+        run: echo '${{ toJSON(github.event.pull_request.labels) }}' | jq -r 'map(.name)? | join(",")'
 
       - name: Get autor
         run: |
