@@ -39,3 +39,10 @@ jobs:
     steps:
       - name: Autor
         run: echo "${{ toJSON(github.actor) }}"
+
+  autor_condition:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Autor
+        run: echo "${{ toJSON(github.actor) }}"
