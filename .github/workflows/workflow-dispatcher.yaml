@@ -19,3 +19,11 @@ jobs:
     steps:
       - name: Debug
         run: echo "${{ toJSON(github) }}"
+
+      - name: Debug
+        if: github.event.inputs.dry_run == 'true'
+        run: echo "${{ toJSON(github) }}"
+
+      - name: Debug
+        if: github.event.inputs.dry_run == true
+        run: echo "${{ toJSON(github) }}"
