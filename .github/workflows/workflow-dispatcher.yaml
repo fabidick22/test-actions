@@ -21,9 +21,9 @@ jobs:
         run: echo "${{ toJSON(github) }}"
 
       - name: Debug
-        if: github.event.inputs.dry_run == 'true'
+        if: github.event.inputs.dry_run == 'false'
         run: echo "${{ toJSON(github) }}"
 
       - name: Debug
-        if: github.event.inputs.dry_run == true
+        if: github.event.inputs.dry_run == false
         run: echo "${{ toJSON(github) }}"
