@@ -31,7 +31,11 @@ jobs:
         if: github.event.inputs.dry_run == false
         run: echo "${{ github.event.inputs.dry_run }}"
 
-      - uses: ministryofjustice/setup-git-crypt@main
+      - name: Install git-crypt
+        run: |
+          git clone https://github.com/AGWA/git-crypt.git
+          cd git-crypt && make && make install PREFIX=/opt/project
+          echo "/opt/project/bin" >> $GITHUB_PATH
 
       - name: Debug 3
         run: git-crypt --version
