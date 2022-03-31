@@ -27,3 +27,16 @@ jobs:
       - name: Debug
         if: github.event.inputs.dry_run == false
         run: echo "${{ github.event.inputs.dry_run }}"
+
+      - name: Unlock secrets
+        uses: sliteteam/github-action-git-crypt-unlock@1.2.0
+        env:
+          GIT_CRYPT_KEY: ${{ secrets.GIT_CRYPT_KEY }}
+
+      - name: Debug 3
+        run: git-crypt --version
+
+      - uses: ministryofjustice/setup-git-crypt@main
+
+      - name: Debug 3
+        run: git-crypt --version
