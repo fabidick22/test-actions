@@ -1,0 +1,24 @@
+name: 'GitHub Events'
+on:
+  workflow_dispatch:
+    inputs:
+      ra_number:
+        type: string
+        required: true
+        description: Review App ID
+      event_type:
+        type: choice
+        required: true
+        description: Event Type
+        options:
+          - destroy
+jobs:
+  labels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug Github Event
+        run: echo "${{ toJSON(github.event) }}"
+
+      - name: Debug Github
+        run: echo "${{ toJSON(github) }}"
+
