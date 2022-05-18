@@ -1,4 +1,4 @@
-name: 'PR Labels'
+name: 'PR Events (sync,open,re-open,labels)'
 on:
   workflow_dispatch:
     inputs:
