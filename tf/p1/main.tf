@@ -4,7 +4,7 @@ data "http" "get" {
 }
 
 data "template_file" "init" {
-  template = file("${path.module}/init.tpl")
+  template = file("${path.module}/init.tplZ")
   vars = {
     consul_address = data.http.get.body
   }
