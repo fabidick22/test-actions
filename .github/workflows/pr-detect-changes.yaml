@@ -19,7 +19,7 @@ jobs:
         with:
           filters: |
             src:
-              - 'src/**'
+              - 'modules/**'
 
       - name: List all changed files
         run: |
