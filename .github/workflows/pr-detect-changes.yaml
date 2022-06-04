@@ -1,0 +1,30 @@
+name: 'PR Labels'
+on:
+  pull_request:
+    types: [synchronize, opened, reopened, labeled]
+    branches:
+      - main
+jobs:
+  labels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v22.2
+
+      - uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          filters: |
+            src:
+              - 'src/**'
+
+      - name: List all changed files
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            echo "$file was changed"
+          done
+
+      - run: echo ${{ steps.changes.outputs.changes }}
