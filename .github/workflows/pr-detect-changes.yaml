@@ -23,7 +23,7 @@ jobs:
       run: echo '${{ fromJSON(steps.filter.outputs.modules_count) }}'
 
     - name: Files
-      run: echo '${{ fromJSON(steps.filter.outputs.modules_files) }}'
+      run: echo '${{ steps.filter.outputs.modules_files }}'
 
     - name: Files changes
       run: echo '${{ fromJSON(steps.filter.outputs.changes) }}'
