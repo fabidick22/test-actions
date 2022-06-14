@@ -5,27 +5,29 @@ on:
     branches:
       - main
 jobs:
-  labels:
+  # JOB to run change detection
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      # Expose matched filters as job 'packages' output variable
+      packages: ${{ steps.filter.outputs.changes }}
+    steps:
+    # For pull requests it's not necessary to checkout the code
+    - uses: dorny/paths-filter@v2
+      id: filter
+      with:
+        filters: |
+          modules: modules/**
+
+  # JOB to build and test each of modified packages
+  build:
+    needs: changes
+    strategy:
+      matrix:
+        # Parse JSON array containing names of all filters matching any of changed files
+        # e.g. ['package1', 'package2'] if both package folders contains changes
+        package: ${{ fromJSON(needs.changes.outputs.packages) }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Get changed files
-        id: changed-files
-        uses: tj-actions/changed-files@v22.2
-        with:
-          files: |
-            modules/**/*.tf
-            modules/**/*.yaml
-            modules/**/*.yml
-            modules/**/*.json
-          files_ignore: |
-            *.md
-
-      - name: List all changed files
-        run: |
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            echo "$file was changed"
-          done
-
-      - run: echo '${{ steps.changed-files.outputs.all_changed_files }}'
+      - uses: actions/checkout@v2
+      - run: echo '${{ matrix.package }}'
