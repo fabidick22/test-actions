@@ -19,6 +19,15 @@ jobs:
         filters: |
           modules: modules/**
 
+    - name: Files outputs
+      run: ${{ steps.filter.outputs }}
+
+    - name: Files
+      run: ${{ steps.filter.outputs.modules_files }}
+
+    - name: Files changes
+      run: ${{ steps.filter.outputs.changes }}
+
   # JOB to build and test each of modified packages
   build:
     needs: changes
