@@ -20,7 +20,7 @@ jobs:
           modules: modules/**
 
     - name: Files outputs
-      run: echo '${{ fromJSON(steps.filter.outputs) }}'
+      run: echo '${{ fromJSON(steps.filter.outputs.modules_count) }}'
 
     - name: Files
       run: echo '${{ fromJSON(steps.filter.outputs.modules_files) }}'
