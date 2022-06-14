@@ -20,13 +20,13 @@ jobs:
           modules: modules/**
 
     - name: Files outputs
-      run: ${{ fromJSON(steps.filter.outputs) }}
+      run: echo '${{ fromJSON(steps.filter.outputs) }}'
 
     - name: Files
-      run: ${{ fromJSON(steps.filter.outputs.modules_files) }}
+      run: echo '${{ fromJSON(steps.filter.outputs.modules_files) }}'
 
     - name: Files changes
-      run: ${{ fromJSON(steps.filter.outputs.changes) }}
+      run: echo '${{ fromJSON(steps.filter.outputs.changes) }}'
 
   # JOB to build and test each of modified packages
   build:
