@@ -10,31 +10,22 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       # Expose matched filters as job 'packages' output variable
-      packages: ${{ steps.filter.outputs.changes }}
+      packages: ${{ steps.filter.outputs.paths_changed }}
     steps:
-    # For pull requests it's not necessary to checkout the code
-    - uses: dorny/paths-filter@v2
-      id: filter
-      with:
-        filters: |
-          modules: modules/**
+      - uses: actions/checkout@v3
 
-    - name: Files outputs
-      run: echo '${{ fromJSON(steps.filter.outputs.modules_count) }}'
+      - name: Annotate PR
+        id: filter
+        uses: fabidick22/detect-changes-action@test-workflow2
+        with:
+          path: "dist/"
 
-    - name: Files
-      run: echo '${{ steps.filter.outputs.modules_files }}'
+      - run: echo '${{ steps.filter.outputs.paths_changed }}'
 
-    - name: Files changes
-      run: echo '${{ fromJSON(steps.filter.outputs.changes) }}'
-
-  # JOB to build and test each of modified packages
   build:
     needs: changes
     strategy:
       matrix:
-        # Parse JSON array containing names of all filters matching any of changed files
-        # e.g. ['package1', 'package2'] if both package folders contains changes
         package: ${{ fromJSON(needs.changes.outputs.packages) }}
     runs-on: ubuntu-latest
     steps:
