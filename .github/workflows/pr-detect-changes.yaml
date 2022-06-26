@@ -18,7 +18,7 @@ jobs:
         id: filter
         uses: fabidick22/detect-changes-action@main
         with:
-          path: "dist/"
+          path: "modules/"
 
       - run: echo '${{ steps.filter.outputs.paths_changed }}'
 
