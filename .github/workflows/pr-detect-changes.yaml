@@ -16,7 +16,7 @@ jobs:
 
       - name: Annotate PR
         id: filter
-        uses: fabidick22/detect-changes-action@test-workflow2
+        uses: fabidick22/detect-changes-action@main
         with:
           path: "dist/"
 
