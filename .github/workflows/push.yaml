@@ -1,0 +1,19 @@
+
+name: "Terraform cache"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      TF_PATH: "tf/p1"
+    steps:
+      - name: Debug github
+        run: echo "${{ toJSON(github) }}"
+
+      - name: Debug github event
+        run: echo "${{ toJSON(github.event) }}"
