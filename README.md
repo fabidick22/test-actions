@@ -322,3 +322,13 @@ repository for testing purposes only
 }
 ```
 </details>
+
+## Full event json for `schedule`
+<details><summary><strong>github.event</strong></summary>
+
+```json
+{
+  "schedule": "*/10 * * * *"
+}
+```
+</details>
