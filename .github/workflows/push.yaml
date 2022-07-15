@@ -1,5 +1,5 @@
 
-name: "Terraform cache"
+name: "Push Event"
 
 on:
   push:
