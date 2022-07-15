@@ -1,0 +1,15 @@
+name: Workflow
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+
+jobs:
+  debug_event:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug github
+        run: echo "${{ toJSON(github) }}"
+
+      - name: Debug github event
+        run: echo "${{ toJSON(github.event) }}"
