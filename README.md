@@ -1,5 +1,5 @@
 # test-actions
-repository for testing purposes only 
+GitHub Actions events
 
 
 ## Full event json for `repository_dispatch`
