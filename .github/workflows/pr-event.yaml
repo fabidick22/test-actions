@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Debug Github Event
-        run: echo "${{ toJSON(github) }}"
+        run: echo "${{ toJSON(github.event) }}"
 
       - name: Debug Pull Request Event
         run: echo "${{ toJSON(github) }}"
