@@ -12,6 +12,11 @@ on:
         required: false
         default: false
         description: Dry run mode
+      test_str:
+        type: string
+        required: false
+        default: ""
+        description: blank string
 
 jobs:
   deploy:
@@ -22,6 +27,12 @@ jobs:
 
       - name: Debug
         run: echo "${{ toJSON(github) }}"
+
+      - name: Debug
+        run: |
+          if [[ "${{ github.event.inputs.test_str }}" == "" ]]; then
+            echo "Null"
+          fi
 
       - name: Debug
         if: github.event.inputs.dry_run == 'false'
