@@ -25,6 +25,9 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v2
 
+      - name: Vars
+        run: echo "${{ vars.TEST_VARIABLE }}"
+        
       - name: Debug
         run: echo "${{ toJSON(github) }}"
 
