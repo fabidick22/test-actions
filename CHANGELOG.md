@@ -1,3 +1,98 @@
+# [1.2.0](https://github.com/fabidick22/test-actions/compare/v1.1.0...v1.2.0) (2024-06-07)
+
+### Bug Fixes
+
+- Update dry_run condition ([b6779ef](https://github.com/fabidick22/test-actions/commit/b6779ef165d59a46f1b0da969914266536f0b13f))
+- Update dry_run condition ([3deddd3](https://github.com/fabidick22/test-actions/commit/3deddd322ab36bfab6adbf07501b5d5ffa6e242d))
+- Update dry_run condition ([ad67cbb](https://github.com/fabidick22/test-actions/commit/ad67cbb649373433bd57da47cf18d292796514ed))
+- Update dry_run condition ([789f5f9](https://github.com/fabidick22/test-actions/commit/789f5f9cdaa63becf68405b55e12ba6843aa3832))
+- Update dry_run condition ([acd9798](https://github.com/fabidick22/test-actions/commit/acd97980c765c9fcfc2c09804de4a1be7a5b507e))
+- Update dry_run condition ([f97b410](https://github.com/fabidick22/test-actions/commit/f97b410792812dcb3a6cb990fee2e9aa5d87dc5f))
+- Update dry_run condition ([e7f4249](https://github.com/fabidick22/test-actions/commit/e7f4249c3da277384547c29781d42ade027d7962))
+- Update dry_run condition ([96e9d68](https://github.com/fabidick22/test-actions/commit/96e9d68ca3c826db259e7ea4f7a8b35016b5e684))
+
+### Code Refactoring
+
+- add pull_request event ([7476a6b](https://github.com/fabidick22/test-actions/commit/7476a6bf55db0a537d89447d8a9bbf1678a76427))
+- dispatch workflow ([fb86b56](https://github.com/fabidick22/test-actions/commit/fb86b56fd04f6ed44f920fb3acc3798333138fae))
+- fix workflow ([8515e6a](https://github.com/fabidick22/test-actions/commit/8515e6ab79581ea2c2fcff471db52c99d9b978c9))
+- fix workflow ([aabcead](https://github.com/fabidick22/test-actions/commit/aabceadf80d63687ee395bad3b067a67f4c0630e))
+- fix workflow ([17e9d1c](https://github.com/fabidick22/test-actions/commit/17e9d1c4c35033dfe677c68a288ebf08cbb33090))
+- fix workflow ([3e248ba](https://github.com/fabidick22/test-actions/commit/3e248ba3f06268dc87129ba4c6d4ef5bc08a7977))
+- rename evente ([271877a](https://github.com/fabidick22/test-actions/commit/271877ab407bedf8f1482ed4edadb0b2d97d9b4a))
+- update action version ([3b51976](https://github.com/fabidick22/test-actions/commit/3b519760d8ac8e0b4d450c4f7d4ce5ca3d925aea))
+- update path ([4710de5](https://github.com/fabidick22/test-actions/commit/4710de58413c97b726d21d1e02bdac4820872054))
+- update print ([3381012](https://github.com/fabidick22/test-actions/commit/3381012c294e10ae1306bc26b34000eb368c5213))
+- Update repo dispatch workflow ([e05a750](https://github.com/fabidick22/test-actions/commit/e05a75020f334b32c1a33fcc3333ab5c1b366076))
+- update workflow ([64ba8b4](https://github.com/fabidick22/test-actions/commit/64ba8b486df7e012cb3185464f71362754da4da5))
+- update workflow ([82cec04](https://github.com/fabidick22/test-actions/commit/82cec042f7e51b6df109c1da6604790e42d8adde))
+- update workflow ([c5a332e](https://github.com/fabidick22/test-actions/commit/c5a332e3af98abed56fd9746a63cb82322fde47c))
+- update workflow ([200d4ba](https://github.com/fabidick22/test-actions/commit/200d4baab394c49d2a2c74763612f76e9cfe8288))
+- update workflow ([0d8cc1c](https://github.com/fabidick22/test-actions/commit/0d8cc1c940a981aba45dd021947959ba80812041))
+- update workflow ([7e0bcdb](https://github.com/fabidick22/test-actions/commit/7e0bcdb586aaba66ab9ed62820a796d3718bc312))
+- update workflow ([26c18d0](https://github.com/fabidick22/test-actions/commit/26c18d07aa0d804ba57240067ae1ed0e158d3b78))
+- update workflow ([0692dc4](https://github.com/fabidick22/test-actions/commit/0692dc46e8e0af2f51e5fa7d76c15c648fe3719f))
+- update workflow ([f7b8940](https://github.com/fabidick22/test-actions/commit/f7b894096058a251093c6e3619382d3d70a32eb4))
+- update workflow ([0b57c36](https://github.com/fabidick22/test-actions/commit/0b57c36b61408623e9bfc2977b7c5e84867efe44))
+- update workflow ([193c425](https://github.com/fabidick22/test-actions/commit/193c4252921046b65b6bb6d3f77f93e42787677e))
+- update workflow ([80fce4b](https://github.com/fabidick22/test-actions/commit/80fce4b5d7c7e5431d5d92ef3789a8c0b78baa75))
+- update workflow ([a2df326](https://github.com/fabidick22/test-actions/commit/a2df326df2d4fb8e110ac1bece83316029eb88b7))
+- update workflow ([9d096e0](https://github.com/fabidick22/test-actions/commit/9d096e0ab0e903d558bacc022b76528fdfcd4af8))
+- update workflow ([131a80b](https://github.com/fabidick22/test-actions/commit/131a80b24ef9005ec56864187e51a4e7cf12112c))
+- update workflow ([a11981e](https://github.com/fabidick22/test-actions/commit/a11981e5199b6149ba33da8f0c2977e613bf77bc))
+- Update workflow ([67c7b62](https://github.com/fabidick22/test-actions/commit/67c7b629700f0507ed9e432e2536392bc3cdfbdf))
+- Update workflow ([836c7ad](https://github.com/fabidick22/test-actions/commit/836c7ad392ee64a164961caf684c4e5a6d73bb4e))
+- Update workflow ([0356992](https://github.com/fabidick22/test-actions/commit/0356992810673b9f7ec38892a0fa4b716edd254e))
+- Update workflow ([7442bdb](https://github.com/fabidick22/test-actions/commit/7442bdb337106b6bad94f8875612da4973854959))
+- update workflow name ([b86fd34](https://github.com/fabidick22/test-actions/commit/b86fd348a28196672263b2b4fb8a4316744d1660))
+
+### Documentation
+
+- Add event documentation ([b773a95](https://github.com/fabidick22/test-actions/commit/b773a95ec9b56336723c131e21102742d1e50b8d))
+- Add full json repo dispatch ([5a6dbb1](https://github.com/fabidick22/test-actions/commit/5a6dbb1e209aaaad4e271dc1534dae506db894ab))
+
+### Features
+
+- add new workflow ([8cf5894](https://github.com/fabidick22/test-actions/commit/8cf5894d5415dffdc5d738136f8afa22356882d8))
+- add new workflow ([73cce4d](https://github.com/fabidick22/test-actions/commit/73cce4dbb403f48adbe0e5d71e57e48195eb7618))
+- add new workflow ([1a83915](https://github.com/fabidick22/test-actions/commit/1a839159147b236b5d5a42184f3aac5d429bc45f))
+- add new workflow ([345ba0d](https://github.com/fabidick22/test-actions/commit/345ba0da80b9c965ef52baa75a365eed506ac7df))
+- add new workflow ([f855fbe](https://github.com/fabidick22/test-actions/commit/f855fbe37d15ca84061017fb56a117ae53263b99))
+- Add new workflow ([6905e04](https://github.com/fabidick22/test-actions/commit/6905e048ca583012cd25aae4e776b459f76c248c))
+- Add new workflow ([a491082](https://github.com/fabidick22/test-actions/commit/a491082ddc7f045941d632467f9616eb8fed2611))
+- rename workflow ([33a010b](https://github.com/fabidick22/test-actions/commit/33a010be82a5a5a077356e2292dee1e710549dab))
+- rename workflows ([c312819](https://github.com/fabidick22/test-actions/commit/c3128197de0860830a226a987147445d3c3a44aa))
+- update exit code ([a373f61](https://github.com/fabidick22/test-actions/commit/a373f616b4a8b9a097de6c221eaa5bfba6f1f930))
+- update exit code ([6d025ae](https://github.com/fabidick22/test-actions/commit/6d025aed592612124d96cf76fd2b1c090b237d57))
+- Update exit code ([5e0a097](https://github.com/fabidick22/test-actions/commit/5e0a097b0d95579291ec34bf50a5eadecdad5f65))
+- update exit code 2 ([1b61922](https://github.com/fabidick22/test-actions/commit/1b61922a8887b827e4de0c9411d19707fcbea024))
+- update stale workflow ([b618d82](https://github.com/fabidick22/test-actions/commit/b618d829224d3c88a14f2274174ad499c23a97db))
+- update stale workflow ([a97182a](https://github.com/fabidick22/test-actions/commit/a97182a35d563cf7db2d98139675eef7e57fc9af))
+- update stale workflow ([fb7b48e](https://github.com/fabidick22/test-actions/commit/fb7b48e8c4fce377b6ba154b8cad5f260387a6b0))
+- update stale workflow ([ecf11af](https://github.com/fabidick22/test-actions/commit/ecf11af7bcb0ccf68284e446096f66abc4983b3a))
+- update stale workflow ([50d7d0c](https://github.com/fabidick22/test-actions/commit/50d7d0ca0a421b90aab95a0f15cd44b340c944b1))
+- update stale workflow ([7173fc5](https://github.com/fabidick22/test-actions/commit/7173fc5152425a0b84abfd8be9d180cc0bccb1f2))
+- Update stale-pr-label ([ca57d1b](https://github.com/fabidick22/test-actions/commit/ca57d1b493be1203a284169d9bd516ee5077d958))
+- Update test-autorelease.yaml ([704517c](https://github.com/fabidick22/test-actions/commit/704517c20a64762620011ffba6d1c4b7e168e347))
+- Update test-autorelease.yaml (#15) ([a161d76](https://github.com/fabidick22/test-actions/commit/a161d765e228f119880823cb8cb99eac4884f3f0)), closes [#15](https://github.com/fabidick22/test-actions/issues/15)
+
+### Other
+
+- Update workflow-dispatcher.yaml ([0b2009c](https://github.com/fabidick22/test-actions/commit/0b2009ca0456eb5954a75a78889469c31cd14448))
+- Merge pull request #13 from fabidick22/test-detect-changes ([8084782](https://github.com/fabidick22/test-actions/commit/8084782d3fdc13b9c30ff4ce6ebcd56a36b9de09)), closes [#13](https://github.com/fabidick22/test-actions/issues/13)
+- Add workflow ([9b18f17](https://github.com/fabidick22/test-actions/commit/9b18f17dfd692593792b8563b46313447374aaa9))
+- Update workflow ([4c144ac](https://github.com/fabidick22/test-actions/commit/4c144ac50dcd089e8bba22e0fe85a1580cee02a1))
+- Ass new workflow ([7bd41ec](https://github.com/fabidick22/test-actions/commit/7bd41ec0175075eee7c295a5145f25822a5312f0))
+- Merge pull request #10 from fabidick22/fabidick22-patch-5 ([2a6f90a](https://github.com/fabidick22/test-actions/commit/2a6f90a734493d2ab9fda865ab42ff0d2043aadd)), closes [#10](https://github.com/fabidick22/test-actions/issues/10)
+- Merge branch 'main' into fabidick22-patch-5 ([896f3d4](https://github.com/fabidick22/test-actions/commit/896f3d4a7cc0263afe67a159df559f7c567ef395))
+- Update Gemfile ([2f8a26e](https://github.com/fabidick22/test-actions/commit/2f8a26e06b0b7b703e7431abc11c274fd78e17b6))
+- feat\_ add new workflow ([9c140aa](https://github.com/fabidick22/test-actions/commit/9c140aa1749ce7817164a241aaa2076ecaf059c6))
+- Merge branch 'main' of github.com:fabidick22/test-actions ([d4b4927](https://github.com/fabidick22/test-actions/commit/d4b492737559fad888fbc0b896588cc544bb2caa))
+
+### Tests
+
+- Add new tf file ([0697834](https://github.com/fabidick22/test-actions/commit/0697834ad62837bd871f7ea31018295ea7335f24))
+
 # [1.1.0](https://github.com/fabidick22/test-actions/compare/v1.0.3...v1.1.0) (2022-03-20)
 
 ### Features
