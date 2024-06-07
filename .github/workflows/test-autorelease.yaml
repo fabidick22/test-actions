@@ -19,7 +19,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         uses: ridedott/release-me-action@v3
         with:
-          release-branches: '["main", "master"]'
+          release-branches: '["main"]'
           dry-run: true
           release-rules-append: |
             [
