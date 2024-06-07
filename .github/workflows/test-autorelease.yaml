@@ -17,10 +17,17 @@ jobs:
         id: build_package2
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        uses: ridedott/release-me-action@v3.6.23
+        uses: ridedott/release-me-action@v3
         with:
           release-branches: '["main", "master"]'
           dry-run: true
+          release-rules-append: |
+            [
+              { "release": "patch", "type": "chore" },
+              { "release": "patch", "type": "ci" },
+              { "release": "patch", "type": "refactor" },
+              { "release": false, "subject": "*\\[skip release\\]*" }
+            ]
 
       - run: echo "${{ steps.build_package2.outputs.version }}"
 
