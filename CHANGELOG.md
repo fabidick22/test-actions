@@ -1,3 +1,9 @@
+# [1.3.0](https://github.com/fabidick22/test-actions/compare/v1.2.0...v1.3.0) (2024-06-07)
+
+### Features
+
+- Update README.md (#16) ([e40305a](https://github.com/fabidick22/test-actions/commit/e40305a2fafe537b9d597c9043ba033e8e83ee4b)), closes [#16](https://github.com/fabidick22/test-actions/issues/16)
+
 # [1.2.0](https://github.com/fabidick22/test-actions/compare/v1.1.0...v1.2.0) (2024-06-07)
 
 ### Bug Fixes
