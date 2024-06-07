@@ -1,3 +1,9 @@
+# [1.4.0](https://github.com/fabidick22/test-actions/compare/v1.3.0...v1.4.0) (2024-06-07)
+
+### Features
+
+- BREAKING CHANGE Update README.md (#17) ([db3d0ce](https://github.com/fabidick22/test-actions/commit/db3d0ce2a3e841768bcaa0b9bc2d5ea3426758aa)), closes [#17](https://github.com/fabidick22/test-actions/issues/17)
+
 # [1.3.0](https://github.com/fabidick22/test-actions/compare/v1.2.0...v1.3.0) (2024-06-07)
 
 ### Features
